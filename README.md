@@ -81,7 +81,6 @@ func main() {
 		nil, // No tags
 	)
 
-	// Insert logs into the stream
 	resp, err := streamBuilder.CreateStream()
 	if err != nil && resp == 400 {
 		fmt.Println(err)
